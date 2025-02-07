@@ -57,7 +57,7 @@ with onglet2:
     )
     st.subheader("📈 Distribution des salaires en France")
     st.plotly_chart(fig3)
-    st.markdown("Ce graphique montre la répartition des salaires en France pour divers métiers technologiques, selon trois niveaux d'expérience : débutant (SE), intermédiaire (MI) et expert (EN). On observe que les experts (EN, en rouge) perçoivent les salaires les plus élevés, bien qu'ils soient concentrés sur quelques métiers comme 'Data Scientist' ou 'Machine Learning Research Engineer'. Les débutants (SE, en bleu foncé) ont des salaires plus homogènes, avec des métiers tels que 'Data DevOps Engineer' qui se distinguent par des rémunérations de départ supérieures. Les intermédiaires (MI, en bleu clair) présentent une plus grande variabilité, particulièrement pour les postes de 'Data Scientist', reflétant des écarts significatifs entre entreprises et compétences. En résumé, les métiers liés à la data science et au machine learning sont les plus rémunérateurs, mais les salaires varient fortement avec l'expérience et le domaine choisi.")
+    st.markdown("Ce graphique montre la répartition des salaires en France pour divers métiers technologiques, selon trois niveaux d'expérience : débutant, intermédiaire et expert. On observe que les experts (en rouge) ont les salaires les plus élevés, alors qu'ils soient concentrés sur quelques métiers comme 'Data Scientist' ou 'Machine Learning Research Engineer'. Les débutants (en bleu foncé) ont des salaires plus homogènes, avec des métiers tels que 'Data DevOps Engineer'. Les intermédiaires (en bleu clair) présentent une plus grande variabilité, particulièrement pour les postes de 'Data Scientist', montrant des écarts significatifs entre entreprises et compétences.")
 
 with onglet3:
     st.header('Question 4')
@@ -103,7 +103,7 @@ with onglet4:
     - La variable `salary` a une faible corrélation positive avec `remote_ratio` (0.029), mais presque aucune corrélation avec `salary_in_usd` (-0.024). Cela indique que le salaire local n'a pas beaucoup d'impact sur le ratio de télétravail ou les salaires en dollars.
     - La variable `salary_in_usd` a une faible corrélation négative avec `remote_ratio` (-0.064). Cela montre que les salaires en dollars ne dépendent pas beaucoup du travail à distance.
     - La variable `remote_ratio` a une faible corrélation positive avec `salary` (0.029) et une corrélation négative avec `work_year` (-0.24). Cela montre que le travail à distance est légèrement plus courant pour des salaires locaux élevés, mais tend à diminuer avec les années de travail.
-    En résumé, les corrélations sont globalement faibles, ce qui signifie qu’il n’y a pas de relation forte entre ces variables numériques.""")
+    """)
     
 
 
@@ -156,7 +156,7 @@ Ce graphique montre l'évolution des salaires moyens pour les 10 postes les plus
 
 - Les postes de `Data Architect` et `Research Engineer` montrent des variations notables, mais globalement une tendance à la hausse.
 
-En résumé, les postes liés à la gestion ou au machine learning sont les plus rémunérateurs, tandis que les postes d'analyse ou d'ingénierie restent stables mais moins compétitifs.
+
 """)
 
 
@@ -192,15 +192,15 @@ with onglet6:
     """
 Ce graphique montre le salaire médian en fonction du niveau d'expérience et de la taille d'entreprise.
 
-- Pour le niveau `EN` (expert), les salaires médians sont similaires dans les grandes (L), moyennes (M), et petites entreprises (S), autour de 50k.
+- Pour le niveau `EN`, les salaires médians sont similaires dans les grandes, moyennes, et petites entreprises, autour de 50k.
 
-- Pour le niveau `EX` (expérimenté), les grandes entreprises (L) et les moyennes entreprises (M) offrent des salaires médians proches de 200k, tandis que les petites entreprises (S) restent légèrement en retrait.
+- Pour le niveau `EX`, les grandes entreprises et les moyennes entreprises offrent des salaires médians proches de 200k, tandis que les petites entreprises restent légèrement en retrait.
 
-- Pour le niveau `MI` (intermédiaire), les grandes entreprises (L) et les moyennes entreprises (M) affichent des salaires médians d’environ 100k, tandis que les petites entreprises (S) sont nettement plus basses.
+- Pour le niveau `MI`, les grandes entreprises et les moyennes entreprises affichent des salaires médians d’environ 100k, tandis que les petites entreprises sont nettement plus basses.
 
-- Pour le niveau `SE` (débutant), les grandes entreprises (L) ont des salaires légèrement plus élevés que les moyennes (M), et les petites entreprises (S) sont en retrait, bien que la différence soit moins marquée qu'aux autres niveaux.
+- Pour le niveau `SE`, les grandes entreprises ont des salaires légèrement plus élevés que les moyennes, et les petites entreprises sont en retrait, bien que la différence soit moins marquée qu'aux autres niveaux.
 
-En résumé, les grandes et moyennes entreprises tendent à offrir des salaires plus compétitifs, surtout pour les niveaux d'expérience expérimenté (EX) et intermédiaire (MI).
+
 """)
 
 with onglet7:
@@ -225,19 +225,18 @@ with onglet7:
     st.dataframe(filtered_data)
     st.markdown(
 """
-Ce graphique montre un filtre appliqué sur les salaires, avec une plage sélectionnée entre 5,132 et 450,000. Le nombre d’entrées restant après application du filtre est de 3,755.
+Ce graphique montre un filtre appliqué sur les salaires, avec une plage sélectionnée entre 5,132 et 450,000.
 
 - La colonne `work_year` montre que toutes les données sont pour l'année 2023.
 
-- La colonne `experience_level` indique que les données filtrées couvrent différents niveaux d'expérience, incluant `SE` (débutant) et `MI` (intermédiaire).
+- La colonne `experience_level` montre que les données filtrées couvrent différents niveaux d'expérience, `SE`  et `MI`.
 
-- La colonne `employment_type` inclut principalement des contrats à temps plein (`FT`) et quelques contrats temporaires (`CT`).
+- La colonne `employment_type` montre principalement des contrats à temps plein et quelques contrats temporaires.
 
 - La colonne `job_title` montre des postes variés, comme `Principal Data Scientist`, `ML Engineer`, `Data Scientist`, et `Applied Scientist`.
 
-- La colonne `salary` varie de 25,500 USD à 222,200 USD, avec des monnaies spécifiées dans la colonne `salary_currency` (USD et EUR).
+- La colonne `salary` varie de 25,500 à 222,200 avec des monnaies spécifiées dans la colonne `salary_currency`.
 
-En résumé, ce filtre permet de se concentrer sur une sélection de salaires correspondant à divers postes et niveaux d’expérience, tout en offrant une vue claire des types d'emploi et des devises associées.
 """)
 
 
@@ -267,7 +266,17 @@ with onglet8:
     )
     st.subheader("📊 Impact du télétravail sur le salaire selon le pays")
     st.plotly_chart(fig9)
-    
+    st.markdown(
+"""
+Ce graphique montre une relation entre le télétravail et les salaires moyens selon les pays, avec une forte variabilité. 
+Certains pays affichent des salaires nettement plus élevés, dépassant parfois 500k, tandis que d’autres restent bien en dessous. 
+La coloration des barres indique que dans certains pays, un fort ratio de télétravail est associé à des salaires élevés donc des emplois compatibles avec le télétravail, 
+comme ceux du secteur technologique, sont généralement mieux rémunérés. Cependant, les pays avec peu de télétravail présentent souvent des salaires plus bas, 
+ce qui pourrait refléter une prédominance d’emplois moins adaptés au télétravail. On observe également une forte dispersion des salaires au sein de certains pays, 
+ce qui montre l’importance des écarts intra-pays.
+""")
+
+  
 with onglet9:
     st.header('Question 10')
     ### 10. Filtrage avancé des données avec deux st.multiselect, un qui indique "Sélectionnez le niveau d'expérience" et l'autre "Sélectionnez la taille d'entreprise"
@@ -296,12 +305,14 @@ with onglet9:
     #afficher
     st.write(f"Nb d'entrées après filtrage : {len(filtered_data)}")
     st.dataframe(filtered_data)
-
-
-
-
-
-
+    st.markdown(
+"""
+Ce tableau présente les résultats d'un filtrage des données basé sur le niveau d'expérience et la taille de l'entreprise. 
+Il affiche diverses informations telles que l’année de travail, le niveau d'expérience, le type d'emploi, l'intitulé du poste, le salaire et la devise utilisée. On y observe plusieurs postes liés à la science des données, 
+comme Principal Data Scientist, ML Engineer, Data Scientist et Applied Scientist, avec des salaires variant considérablement en fonction du poste et de la localisation, exprimés en EUR ou USD. 
+Par exemple, un Data Scientist peut percevoir des salaires allant de 120 000 à 219 000 USD, tandis qu’un ML Engineer affiche des rémunérations plus basses. 
+Ce filtrage permet d'extraire des tendances salariales en fonction du niveau d'expérience et de la taille de l'entreprise.
+""")
 
 
 
