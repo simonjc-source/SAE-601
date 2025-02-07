@@ -4,7 +4,7 @@ Projet SAE : Exploration et Analyse de Données avec Pandas et Streamlit
 Description :
 
 Ce projet vise à développer des compétences en manipulation et analyse de données en utilisant la bibliothèque Pandas en Python. 
-L'objectif est d'explorer et d'analyser un jeu de données provenant de Kaggle, d'effectuer des requêtes similaires à SQL avec Pandas et de créer des visualisations interactives avec Streamlit.
+L'objectif est d'explorer et d'analyser un jeu de données provenant de Kaggle, d'effectuer des requêtes avec Pandas et de créer des visualisations interactives avec Streamlit.
 
 
 Auteurs :
